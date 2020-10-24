@@ -134,7 +134,7 @@
             var scroll_to = $(this).attr('data-scrollto');
             
             if($('body#landing-page').length === 0){
-                window.location.href = '/#'+scroll_to;
+                window.location.href = './index.html#'+scroll_to;
             }
             else{
                 if ($('#' + scroll_to + '.section').length > 0 && scroll_to !== undefined) {
