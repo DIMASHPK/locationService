@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Locate a mobile phone</title>
+    <link rel="shortcut icon" href="/assets1/img/favicon/favicon.ico" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:600|Source+Sans+Pro:600,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets1/css/applify.css" />
+    <link rel="stylesheet" href="/assets1/css/custom.css" />
+  </head>
+  <body id="landing-page" class="ui-transparent-nav">
+    <nav class="navbar navbar-fixed-top navbar-default transparent">
+      <div class="container">
+        <a
+          class="ui-variable-logo navbar-brand"
+          href="./index.html"
+          title="mobile phone locator, track a number location, phone location trace"
+        >
+          <img
+            class="logo-default"
+            src="/assets1/img/logo/Go-Find-Logo.svg"
+            alt="Locate a mobile phone"
+          />
+          <img
+            class="logo-transparent"
+            src="/assets1/img/logo/Go-Find-Logo-2.svg"
+            alt="Locate a mobile phone"
+          /> </a
+        >
+        <a href="#" class="ui-mobile-nav-toggle pull-right">
+          <span class="sr-only">Menu</span>
+        </a>
+        <div class="ui-navigation navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="#" data-scrollto="ventajas">Advantages</a></li>
+            <li><a href="#" data-scrollto="pricing">Price</a></li>
+            <li><a href="#" data-scrollto="funcionamiento">How it works</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main" role="main">
+      <style type="text/css">
+        .has-success {
+          width: 100% !important;
+        }
+        .has-success .intl-tel-input {
+          display: table-cell !important;
+        }
+      </style>
+      <div
+        id="start"
+        class="ui-hero hero-lg ui-curve ui-gradient-blue hero-svg-layer-2 section"
+      >
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-sm-5"
+              data-vertical_center="true"
+              data-vertical_offset="16"
+            >
+              <h1
+                class="heading animate"
+                data-show="fade-in-up-big"
+                data-delay="100"
+              >
+                Locate a mobile phone
+              </h1>
+              <!-- <form
+                id="form_subscribe"
+                action="/locate_phone"
+                method="POST"
+                class="animate"
+                data-show="fade-in-up-big"
+                data-delay="500"
+              >
+                <label class="mb-1">Enter the number to track</label>
+                <div class="form-group">
+                  <div id="phone-error" class="tooltip" style="display: none">
+                    Enter the correct number for your country
+                  </div>
+                  <div class="input-group">
+                    <input
+                      id="phone_to_geolocate"
+                      type="tel"
+                      name="phone_to_geolocate"
+                      class="form-control input"
+                      required="required"
+                      value=""
+                    />
+                    <div class="input-group-btn">
+                      <button
+                        id="prevalid_num"
+                        class="btn ui-gradient-green"
+                        type="button"
+                      >
+                        OK
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div id="form-part-2" style="display: none">
+                  <p class="info paragraph mt-2">
+                    <i class="fa fa-exclamation-circle"></i> Please enter a
+                    valid email address. You will be informed of the results of
+                    your search on your email.
+                  </p>
+                  <div class="form-group shadow mt-1 mb-1">
+                    <span class="icon-envelope"></span>
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      class="form-control input"
+                      placeholder="Enter your email"
+                      required="required"
+                      autocomplete="off"
+                    />
+                  </div>
+
+                  <div
+                    id="email2-group"
+                    class="form-group shadow mt-1 mb-2"
+                    style="display: none"
+                  >
+                    <div
+                      id="email-match-error"
+                      class="tooltip"
+                      style="display: none"
+                    >
+                      The email addresses must match.
+                    </div>
+                    <div>
+                      <span class="icon-envelope"></span>
+                      <input
+                        id="email2"
+                        type="email"
+                        name="email2"
+                        class="form-control input"
+                        placeholder="Re-enter the email"
+                        required="required"
+                        autocomplete="off"
+                      />
+                    </div>
+                  </div>
+
+                  <p class="info paragraph">
+                    <input
+                      style="margin-right: 5px; margin-left: 5px"
+                      type="checkbox"
+                      name="terms"
+                      required
+                    />I have read and accept the
+                    <a
+                      style="text-decoration: underline"
+                      href="https://goandfind.info/terms_conditions/#googtrans(en)"
+                      target="_blank"
+                      >Conditions of Use and Contracting</a
+                    >, as well as the
+                    <a
+                      style="text-decoration: underline"
+                      href="https://goandfind.info/politica_privacidadd"
+                      target="_blank"
+                      >Privacy Policy </a
+                    >.
+                  </p>
+
+                  <button
+                    id="go"
+                    class="btn center-block g-recaptcha ui-gradient-green shadow-xl"
+                    data-sitekey="6LdCVDMUAAAAAHvuEzsCY5gdAZzMGMLmBBt4Hjea"
+                    data-callback="callStripeCheckout"
+                    disabled
+                  >
+                    Start geolocation
+                  </button>
+                </div>
+              </form> -->
+              <p
+                class="paragraph animate mt-2 info-text"
+                data-show="fade-in-up-big"
+                data-delay="700"
+              >
+                Track a mobile phone regardless of the operator they choose by
+                using our geolocation service and find out where the person you
+                are targeting is located. The geolocation system requires prior
+                consent of the user, in accordance with the AEPD regulation.
+              </p>
+            </div>
+            <div
+              class="col-sm-7 animate"
+              data-show="fade-in-left"
+              data-delay="400"
+            >
+              <img
+                src="/assets1/img/mockups/applify-mockup-5.png"
+                alt="Track mobile phone"
+                data-uhd
+                data-max_width="300"
+                class="responsive-on-sm"
+              />
+              <span class="map-pin">
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="ventajas" class="section">
+        <a name="ventajas"></a>
+        <div
+          class="alert alert-success alert-dismissible fade in"
+          role="alert"
+          style="display: none"
+        >
+          <button
+            type="button"
+            class="close"
+            data-dismiss="alert"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">×</span>
+          </button>
+          <span class="glyphicon glyphicon glyphicon-ok-sign"></span> Your
+          request has been processed. A confirmation email has been sent.
+        </div>
+        <div
+          class="container ui-icon-blocks ui-blocks-h icons-lg animate"
+          data-show="fade-in"
+        >
+          <div class="section-heading center">
+            <h3 class="heading text-indigo">Advantages of Our Services</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-sm-6 ui-icon-block">
+              <div class="icon icon-lg icon-circle">
+                <img
+                  src="/assets1/icons/icon-signal.png"
+                  data-uhd
+                  alt="Locate Mobile Phone"
+                />
+              </div>
+              <h5>All Operators</h5>
+              <p>
+                Our location system is suitable with all mobile phone operators.
+              </p>
+            </div>
+            <div class="col-md-3 col-sm-6 ui-icon-block">
+              <div class="icon icon-lg icon-circle">
+                <img
+                  src="/assets1/icons/icon-mobile.png"
+                  data-uhd
+                  alt="Locate Mobile Phone"
+                />
+              </div>
+              <h5>All mobile phone brands</h5>
+              <p>
+                We are able to trace a mobile phone thanks to our geolocation
+                system (E.G. Samsung, Nokia, Apple, Sony, BlackBerry, etc)
+              </p>
+            </div>
+            <div class="col-md-3 col-sm-6 ui-icon-block">
+              <div class="icon icon-lg icon-circle">
+                <img
+                  src="/assets1/icons/icon-globe.png"
+                  data-uhd
+                  alt="Locate Mobile Phone"
+                />
+              </div>
+              <h5>Worldwide Coverage</h5>
+              <p>
+                Our Geolocation Technology Service is really accurate and
+                available WorlWide if the desired mobile phone has Internet
+                access.
+              </p>
+            </div>
+            <div class="col-md-3 col-sm-6 ui-icon-block">
+              <div class="icon icon-lg icon-circle">
+                <img
+                  src="/assets1/icons/icon-stamp.png"
+                  data-uhd
+                  alt="Locate Mobile Phone"
+                />
+              </div>
+              <h5>In compliance with the legislation</h5>
+              <p>
+                This service is offered in compliance with the recommendations
+                of the Information Commissioner’s Office. Geolocation will
+                activate only with the consent of the person sought.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section pt-0">
+        <div class="container">
+          <div class="ui-showcase-blocks">
+            <div class="row">
+              <div class="col-sm-6 animate" data-show="fade-in-right">
+                <img
+                  class="responsive-on-xs"
+                  src="/assets1/img/mockups/applify-mockup-3.png"
+                  dat-uhd
+                  alt="Track mobile phone"
+                  data-max_width="464"
+                />
+              </div>
+              <div class="col-sm-6" data-vertical_center="true">
+                <h4 class="heading text-indigo">
+                  In accordance with legislation
+                </h4>
+                <p class="paragraph mb-2">
+                  This service is offered in compliance with the recommendations
+                  of the Information Commissioner’s Office. Geolocation will
+                  activate only with the consent of the person sought.
+                </p>
+                <h4 class="heading text-indigo">Precise geolocation</h4>
+                <p class="paragraph mb-2">
+                  Once the person´s number is assigned to the interface, our
+                  technology is implemented with a minimum margin of error. Our
+                  strength lies in the precision of our system. Once the desired
+                  mobile phone is locate, you will receive its precise location
+                  in form of a mapping.
+                </p>
+                <h4 class="heading text-indigo">Choice of confidentiality</h4>
+                <p class="paragraph">
+                  You are free to either request geolocation anonymously or to
+                  identify yourself. If you do an anonymous request, the person
+                  sought will not know the identity of the applicant. On the
+                  other hand, in case of an identified request, the person
+                  sought will be aware of the identity of who wishes to
+                  geolocate her. No online exchange will be made, all
+                  information is handled by our geolocation service.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="pricing"
+        class="section ui-gradient-blue ui-section-tilt ui-action-section"
+      >
+        <div class="container">
+          <div class="row">
+            <!-- <div class="col-md-6 col-sm-6 center-on-sm">
+              <div class="section-heading">
+                <h2 class="heading">Price</h2>
+                <p class="paragraph mb-0">
+                  Our geolocation service is a payment service with a € 0.50
+                  trial for one day. In case you do not cancel your
+                  subscription, it will be renewed automatically and you will be
+                  charged $ 39.99 per month.
+                </p>
+              </div>
+            </div> -->
+            <div class="col-md-6 col-sm-6 animate" data-show="fade-in-left">
+              <div class="ui-pricing-cards">
+                <div class="ui-pricing-card active animate" data-show="fade-in">
+                  <div class="ui-card ui-curve color-card shadow-xl">
+                    <div class="card-header ui-gradient-green">
+                      <h4 class="heading">Geolocation</h4>
+                      <div class="price">
+                        <span class="curency">$</span>
+                        <span class="price">0.50</span>
+                        <span class="period"> for a day</span>
+                      </div>
+                      <h6 class="sub-heading">
+                        7h trial - Without Permanence
+                      </h6>
+                    </div>
+                    <div class="card-body">
+                      <ul>
+                        <li>Precise geolocation</li>
+                        <li>1 Operator</li>
+                        <li>One mobile phone brands</li>
+                        <li>One country Coverage</li>
+                      </ul>
+                      <a
+                        data-scrollto="start"
+                        class="btn ui-gradient-green shadow-md"
+                        >Get free</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 animate" data-show="fade-in-left">
+              <div class="ui-pricing-cards">
+                <div class="ui-pricing-card active animate" data-show="fade-in">
+                  <div class="ui-card ui-curve color-card shadow-xl">
+                    <div class="card-header ui-gradient-green">
+                      <h4 class="heading">Geolocation</h4>
+                      <div class="price">
+                        <span class="curency">$</span>
+                        <span class="price">1.00</span>
+                        <span class="period"> for a day</span>
+                      </div>
+                      <h6 class="sub-heading">
+                        unlimited access
+                      </h6>
+                    </div>
+                    <div class="card-body">
+                      <ul>
+                        <li>Precise geolocation</li>
+                        <li>All Operators</li>
+                        <li>All mobile phone brands</li>
+                        <li>Worldwide Coverage</li>
+                      </ul>
+                      <a
+                        data-scrollto="start"
+                        class="btn ui-gradient-green shadow-md"
+                        >Download</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="funcionamiento" class="section">
+        <div class="container">
+          <div class="section-heading center">
+            <a name="funcionamiento"></a>
+            <h3 class="heading text-indigo">How it works</h3>
+            <p class="paragraph">
+              The geolocation system of our page will allow you to locate a cell
+              phone
+            </p>
+          </div>
+
+          <div class="">
+            <div class="row">
+              <div
+                data-vertical_center="true"
+                class="col-md-6 animate"
+                data-show="fade-in-right"
+              >
+                <img
+                  class="responsive-on-sm"
+                  src="/assets1/img/mockups/applify-mockup-6.png"
+                  dat-uhd
+                  alt="Track mobile phone"
+                  data-max_width="700"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4 class="heading text-indigo">
+                  Steps to carry out geolocation
+                </h4>
+                <p class="paragraph mb-2">
+                  In order to accede geolocation on the number sought, an SMS
+                  with a URL will be sent.
+                </p>
+                <p>
+                  For the service to be supplied, the person to be geolocated
+                  must be connected to the internet and have enabled the
+                  location parameter on his mobile. We then retrieve the user´s
+                  consent and his exact geographical position. The result is
+                  directly sent via sms to the applicant. The feedback is done
+                  via a mapping system that will locate the mobile phone sought
+                  within a few meters radius. The map is suitable o allow you to
+                  zoom in or display the street names.
+                </p>
+                <ol>
+                  <li>
+                    Enter the phone number of the person to be geolocated, your
+                    identity (optional) and your email.
+                  </li>
+                  <li>Make your payment by credit card (secured payment).</li>
+                  <li>
+                    Enter your phone number to receive the geolocation feedback.
+                  </li>
+                  <li>Validate the information.</li>
+                  <li>
+                    Receive the sms on your mobile phone showing feedback on
+                    geolocation.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="text-center pt-4">
+            <p>
+              <b
+                >The service cannot operate if the cell phone is switched off,
+                however as soon as the user turns his phone on, our location
+                search will activate. The applicant will also be informed of
+                geolocation and time at which the position was detected.</b
+              >
+            </p>
+            <p>
+              Please note that according to the Information Commissioner’s
+              Office and in conformity with the regulations applicable to the
+              data collected, geotagging involves the collection and processing
+              of personal data, therefore the service is subject to regulations
+              on the protection of privacy. Thus, our service has the duty to
+              respect the legal obligations that are required and in particular
+              obtain the prior consent of the user.
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer class="ui-footer bg-dark-gray">
+        <div class="container pt-6 pb-6">
+          <div class="row">
+            <div class="col-md-4 col-sm-6 footer-about footer-col center-on-sm">
+              <img
+                class="logo-transparent"
+                src="/assets1/img/logo/Go-Find-Logo-2.svg"
+                alt="Locate a mobile phone"
+                style="max-width: 300px"
+              />
+              <p class="mt-1">
+              </p>
+            </div>
+            <div class="col-md-3 col-md-offset-2 col-xs-6 footer-col">
+              <h6 class="heading footer-heading">Our services</h6>
+              <ul class="footer-nav">
+                <li>
+                  <a href="#" data-scrollto="ventajas"
+                    ><span class="fa fa-star"></span> Advantages</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-scrollto="pricing"
+                    ><span class="fa fa-credit-card-alt"></span> Price</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-scrollto="funcionamiento"
+                    ><span class="fa fa-cogs"></span> How it works</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-xs-6 footer-col">
+              <h6 class="heading footer-heading">Additional information</h6>
+              <ul class="footer-nav">
+                <li>
+                  <a href="./contact.html"
+                    ><span class="fa fa-commenting"></span> Contact</a
+                  >
+                </li>
+                <li>
+                  <a href="./terms_conditions.html"
+                    ><span class="fa fa-file"></span> Terms and conditions</a
+                  >
+                </li>
+                <li>
+                  <a href="./politica_privacidad.html"
+                    ><span class="fa fa-user-secret"></span> Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="./politica_cookies.html"
+                    ><span class="fa fa-bookmark"></span> Cookies policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright bg-gray">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 center-on-sm">
+                <p>&copy; 2019 - goandfind.info</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="./bower_components1/jquery/dist/jquery.js"></script>
+    <script src="./bower_components1/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="/assets1/js/libs/bootstrap/util.js"></script>
+    <script src="/assets1/js/libs/bootstrap/tab.js"></script>
+    <script src="/assets1/js/applify/applify.js"></script>
+  </body>
+</html>
