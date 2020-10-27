@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>Locate a mobile phone</title>
-    <link rel="shortcut icon" href="./assets1/img/favicon/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets1/img/favicon/favicon.ico"
+      type="image/x-icon"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:600|Source+Sans+Pro:600,700"
       rel="stylesheet"
@@ -29,11 +33,17 @@
             class="logo-transparent"
             src="./assets1/img/logo/Go-Find-Logo-2.svg"
             alt="Locate a mobile phone"
-          /> </a
-        >
+          />
+        </a>
         <a href="#" class="ui-mobile-nav-toggle pull-right">
           <span class="sr-only">Menu</span>
         </a>
+        <a
+          href="save_link"
+          download
+          class="btn btn-sm ui-gradient-green pull-right"
+          >Download</a
+        >
         <div class="ui-navigation navbar-right">
           <ul class="nav navbar-nav">
             <li><a href="#" data-scrollto="ventajas">Advantages</a></li>
@@ -60,129 +70,19 @@
         <div class="container">
           <div class="row">
             <div
-              class="col-sm-5"
+              class="col-sm-5 customColResponsive"
               data-vertical_center="true"
               data-vertical_offset="16"
             >
               <h1
-                class="heading animate"
+                class="heading animate customTitle"
                 data-show="fade-in-up-big"
                 data-delay="100"
               >
                 Locate a mobile phone
               </h1>
-              <!-- <form
-                id="form_subscribe"
-                action="/locate_phone"
-                method="POST"
-                class="animate"
-                data-show="fade-in-up-big"
-                data-delay="500"
-              >
-                <label class="mb-1">Enter the number to track</label>
-                <div class="form-group">
-                  <div id="phone-error" class="tooltip" style="display: none">
-                    Enter the correct number for your country
-                  </div>
-                  <div class="input-group">
-                    <input
-                      id="phone_to_geolocate"
-                      type="tel"
-                      name="phone_to_geolocate"
-                      class="form-control input"
-                      required="required"
-                      value=""
-                    />
-                    <div class="input-group-btn">
-                      <button
-                        id="prevalid_num"
-                        class="btn ui-gradient-green"
-                        type="button"
-                      >
-                        OK
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div id="form-part-2" style="display: none">
-                  <p class="info paragraph mt-2">
-                    <i class="fa fa-exclamation-circle"></i> Please enter a
-                    valid email address. You will be informed of the results of
-                    your search on your email.
-                  </p>
-                  <div class="form-group shadow mt-1 mb-1">
-                    <span class="icon-envelope"></span>
-                    <input
-                      id="email"
-                      type="email"
-                      name="email"
-                      class="form-control input"
-                      placeholder="Enter your email"
-                      required="required"
-                      autocomplete="off"
-                    />
-                  </div>
-
-                  <div
-                    id="email2-group"
-                    class="form-group shadow mt-1 mb-2"
-                    style="display: none"
-                  >
-                    <div
-                      id="email-match-error"
-                      class="tooltip"
-                      style="display: none"
-                    >
-                      The email addresses must match.
-                    </div>
-                    <div>
-                      <span class="icon-envelope"></span>
-                      <input
-                        id="email2"
-                        type="email"
-                        name="email2"
-                        class="form-control input"
-                        placeholder="Re-enter the email"
-                        required="required"
-                        autocomplete="off"
-                      />
-                    </div>
-                  </div>
-
-                  <p class="info paragraph">
-                    <input
-                      style="margin-right: 5px; margin-left: 5px"
-                      type="checkbox"
-                      name="terms"
-                      required
-                    />I have read and accept the
-                    <a
-                      style="text-decoration: underline"
-                      href="https://goandfind.info/terms_conditions/#googtrans(en)"
-                      target="_blank"
-                      >Conditions of Use and Contracting</a
-                    >, as well as the
-                    <a
-                      style="text-decoration: underline"
-                      href="https://goandfind.info/politica_privacidadd"
-                      target="_blank"
-                      >Privacy Policy </a
-                    >.
-                  </p>
-
-                  <button
-                    id="go"
-                    class="btn center-block g-recaptcha ui-gradient-green shadow-xl"
-                    data-sitekey="6LdCVDMUAAAAAHvuEzsCY5gdAZzMGMLmBBt4Hjea"
-                    data-callback="callStripeCheckout"
-                    disabled
-                  >
-                    Start geolocation
-                  </button>
-                </div>
-              </form> -->
               <p
-                class="paragraph animate mt-2 info-text"
+                class="paragraph animate mt-2 info-text customParagraph"
                 data-show="fade-in-up-big"
                 data-delay="700"
               >
@@ -191,6 +91,15 @@
                 are targeting is located. The geolocation system requires prior
                 consent of the user, in accordance with the AEPD regulation.
               </p>
+              <a
+                class="btn ui-gradient-green shadow-md animate"
+                data-show="fade-in-up-big"
+                data-delay="800"
+                download
+                href="save_link"
+              >
+                Download
+              </a>
             </div>
             <div
               class="col-sm-7 animate"
@@ -371,9 +280,7 @@
                         <span class="price">0.50</span>
                         <span class="period"> for a day</span>
                       </div>
-                      <h6 class="sub-heading">
-                        7h trial - Without Permanence
-                      </h6>
+                      <h6 class="sub-heading">7h trial - Without Permanence</h6>
                     </div>
                     <div class="card-body">
                       <ul>
@@ -383,7 +290,8 @@
                         <li>One country Coverage</li>
                       </ul>
                       <a
-                        data-scrollto="start"
+                        download
+                        href="save_link"
                         class="btn ui-gradient-green shadow-md"
                         >Get free</a
                       >
@@ -403,9 +311,7 @@
                         <span class="price">1.00</span>
                         <span class="period"> for a day</span>
                       </div>
-                      <h6 class="sub-heading">
-                        unlimited access
-                      </h6>
+                      <h6 class="sub-heading">unlimited access</h6>
                     </div>
                     <div class="card-body">
                       <ul>
@@ -415,10 +321,12 @@
                         <li>Worldwide Coverage</li>
                       </ul>
                       <a
-                        data-scrollto="start"
                         class="btn ui-gradient-green shadow-md"
-                        >Download</a
+                        download
+                        href="save_link"
                       >
+                        Download
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -520,8 +428,7 @@
                 alt="Locate a mobile phone"
                 style="max-width: 300px"
               />
-              <p class="mt-1">
-              </p>
+              <p class="mt-1"></p>
             </div>
             <div class="col-md-3 col-md-offset-2 col-xs-6 footer-col">
               <h6 class="heading footer-heading">Our services</h6>
@@ -545,7 +452,7 @@
             </div>
             <div class="col-md-3 col-xs-6 footer-col">
               <h6 class="heading footer-heading">Additional information</h6>
-              <ul class="footer-nav">
+              <ul class="footer-nav" id="customFooterLinks">
                 <li>
                   <a href="./contact.html"
                     ><span class="fa fa-commenting"></span> Contact</a
@@ -581,7 +488,7 @@
         </div>
       </footer>
     </div>
-    
+
     <script src="./bower_components1/jquery/dist/jquery.js"></script>
     <script src="./bower_components1/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>

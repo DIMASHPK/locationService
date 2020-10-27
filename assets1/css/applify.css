@@ -10010,6 +10010,17 @@ a:hover, .btn:hover {
   margin-top: 2rem;
 }
 
+.ui-hero .paragraph.customParagraph{
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 739px){
+  .customColResponsive{
+    text-align: center;
+  }
+}
+
 .mt-3 {
   margin-top: 3rem;
 }
@@ -10811,6 +10822,10 @@ body[data-fade_in="on-load"],
 @media (min-width: 992px) {
   .ui-hero .heading {
     margin-bottom: 2.25rem;
+  }
+
+  .ui-hero .heading.customTitle {
+    margin-bottom: 1rem
   }
 }
 .ui-hero .paragraph {
@@ -11727,7 +11742,7 @@ body.modal-open {
 /* 25.3 :: Section Tilt */
 .ui-action-section.ui-section-tilt {
   margin: -4rem 0;
-  padding: 16rem 0;
+  padding: 16rem 0 20rem;
   z-index: 0;
 }
 .ui-action-section.ui-section-tilt::before, .ui-action-section.ui-section-tilt::after {
