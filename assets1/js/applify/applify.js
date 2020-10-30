@@ -373,15 +373,6 @@
     );
   });
 
-  //footer empty links
-  const links = document.querySelectorAll("#customFooterLinks a");
-
-  links.forEach((link) =>
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-    })
-  );
-
   $(".alert .close").on("click", function () {
     win.trigger("resize");
   });
